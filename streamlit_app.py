@@ -26,7 +26,7 @@ def main():
         prompt = f"Generate healthy meal suggestions for a {age}-year-old {breed} dog weighing {weight}kg with the following conditions: {conditions}"
 
         # Replace with your OpenAI API key
-        openai_api_key = "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"
+        openai_api_key = "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"
         openai.api_key = openai_api_key
 
         # Replace with your OpenAI model
