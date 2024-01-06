@@ -25,9 +25,8 @@ def main():
         # Create a prompt based on user inputs
         prompt = f"Generate healthy meal suggestions for a {age}-year-old {breed} dog weighing {weight}kg with the following conditions: {conditions}"
 
-        # Replace with your OpenAI API key
-        openai_api_key = "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"
-        openai.api_key = openai_api_key
+        # Use the secret from Streamlit's secrets management
+        openai.api_key = st.secrets["openai_secret_key"]
 
         # Replace with your OpenAI model
         openai_model = "text-davinci-003"
